@@ -1,120 +1,21 @@
-/* Estilos para la cabecera */
-header {
-    background-color: green; /* Color de fondo de la cabecera */
-    padding: 20px; /* Espaciado interno */
-    border-bottom: 2px solid #2980b9; /* Borde inferior */
-}
-
-/* Estilos para el contenido principal */
-main {
-    background-color: #ecf0f1; /* Color de fondo del contenido principal */
-    padding: 20px; /* Espaciado interno */
-    margin: 20px 0; /* Márgenes superior e inferior */
-    border: 1px solid #bdc3c7; /* Borde */
-    border-radius: 5px; /* Bordes redondeados */
-}
-
-/* Estilos para el pie de página */
-footer {
-    background-color: green; /* Color de fondo del pie de página */
-    color: #ffffff; /* Color del texto */
-    padding: 20px; /* Espaciado interno */
-    text-align: center; /* Alineación del texto */
-    border-top: 2px solid #34495e; /* Borde superior */
-}
-/* Estilos para encabezados y párrafos */
-h1, h2, h3, h4, h5, h6 {
-    font-family: "Arial", sans-serif; /* Cambia la fuente de los encabezados */
-    font-size: 24px; /* Tamaño de fuente de los encabezados */
-}
-
-p {
-    font-family: "Arial", sans-serif; /* Cambia la fuente de los párrafos */
-    font-size: 18px; /* Tamaño de fuente de los párrafos */
-}
-
-/* Estilos para lista de actividades */
-.actividades-lista {
-    list-style-type: square; /* Cambia el tipo de viñeta de la lista */
-    margin-left: 20px; /* Agrega un margen a la izquierda de la lista */
-}
-
-/* Estilos para tabla de eventos */
-.eventos-table {
-    width: 100%; /* Ancho completo de la tabla */
-    border-collapse: collapse; /* Colapsa los bordes de la tabla */
-}
-
-.eventos-table th, .eventos-table td {
-    border: 1px solid #ddd; /* Borde de las celdas */
-    padding: 8px; /* Espaciado interno de las celdas */
-}
-
-.eventos-table th {
-    background-color: #f2f2f2; /* Color de fondo de las celdas de encabezado */
-    text-align: left; /* Alineación del texto en las celdas de encabezado */
-}
-
-
-/* Estilos para el pie de página */
-footer {
-    background-color: green; /* Color de fondo del pie de página */
-    color: #fff; /* Color del texto */
-    padding: 20px; /* Espaciado interno */
-    text-align: center; /* Alineación del texto */
-}
-
-.social-icons {
-    margin-top: 10px; /* Margen superior */
-}
-
-.social-icons a {
-    color: #fff; /* Color del ícono */
-    margin: 0 5px; /* Margen entre íconos */
-    font-size: 20px; /* Tamaño del ícono */
-}
-#Temas-de-interes {
-    background-color: #f8f8f8;
-    padding: 20px;
-}
-
-.media-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.media-item {
-    width: 30%; /* Ancho del contenedor de medios */
-    margin-bottom: 20px;
-    padding: 10px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.media-item img {
-    max-width: 100%; /* Ajusta el ancho máximo de la imagen */
-    height: auto; /* Ajusta automáticamente la altura según el ancho */
-}
-
-.media-item iframe {
-    width: 100%; /* Ajusta el ancho del video al 100% del contenedor */
-    height: 200px; /* Establece la altura fija del video */
-    border: none;
-}
 /* Estilos generales */
 
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f8f8f8; /* Color de fondo general */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto; /* Centra el contenido */
 }
 
 header {
     background-color: green;
     color: #fff;
-    padding: 10px 20px;
+    padding: 10px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -145,11 +46,145 @@ footer {
     padding: 20px;
 }
 
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #fff;
+    margin: 0 5px;
+    font-size: 20px;
+}
+
+/* Estilos para el contenido principal */
+
+main {
+    padding: 20px 0;
+}
+
+/* Estilos para secciones */
+
+section {
+    margin-bottom: 40px;
+}
+
+/* Estilos para encabezados y párrafos */
+
+h2 {
+    font-size: 24px;
+    color: green;
+}
+
+p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Estilos para lista de actividades */
+
+.actividades-lista {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+/* Estilos para tabla de eventos */
+
+.eventos-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.eventos-table th, .eventos-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.eventos-table th {
+    background-color: #f2f2f2;
+    text-align: left;
+}
+
+/* Estilos para imágenes y videos */
+
+.image-container {
+    margin-bottom: 20px;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Aspect ratio (16:9) */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Estilos para formulario */
+
+.formulario {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.formulario label {
+    display: block;
+    margin-bottom: 10px;
+    color: green;
+}
+
+.formulario input[type="text"],
+.formulario input[type="password"],
+.formulario input[type="date"],
+.formulario input[type="email"],
+.formulario input[type="tel"],
+.formulario textarea,
+.formulario select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.formulario input[type="submit"] {
+    background-color: green;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.formulario input[type="submit"]:hover {
+    background-color: #4CAF50;
+}
+
 /* Estilos específicos para dispositivos móviles */
 
 @media screen and (max-width: 768px) {
+    .container {
+        width: 90%; /* Ajusta el ancho del contenedor principal */
+    }
+
     nav a {
         display: block;
         margin: 10px 0;
+    }
+
+    .video-container {
+        padding-bottom: 30%; /* Ajusta el aspect ratio de los videos */
     }
 }
